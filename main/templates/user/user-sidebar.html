@@ -1,0 +1,9 @@
+<div class="list-group">
+    <a href="{% url 'dashboard' %}" class="list-group-item {% if request.path == '/dashboard' %}active {% endif %}">Dashboard</a>
+    <a href="{% url 'profile' %}" class="list-group-item {% if request.path == '/profile' %}active {% endif %}">Profile</a>
+    <a href="{% url 'orders' %}" class="list-group-item {% if request.path == '/orders' %}active {% endif %}">Orders</a>
+    <a href="{% url 'my-wishlist' %}" class="list-group-item {% if request.path == '/my-wishlist' %}active {% endif %}">Wishlist</a>
+    <a href="{% url 'reviews' %}" class="list-group-item {% if request.path == '/reviews' %}active {% endif %}">Reviews</a>
+    <a href="{% url 'address' %}" class="list-group-item {% if request.path == '/address' %}active {% endif %}">Address</a>
+    <a href="{% url 'logout' %}" class="text-danger list-group-item">Logout</a>
+</div>
